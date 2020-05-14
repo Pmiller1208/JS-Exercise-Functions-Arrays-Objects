@@ -134,11 +134,11 @@ function addNumbers(num1, num2) {
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
-let patrick =  {id: 1, name: 'Patrick', email: 'pmiller1208@gmail.com'};
-function getName(name) {
-  return `Hello, my name is ${patrick.name}`
-}
-console.log(getName());
+// let patrick =  {id: 1, name: 'Patrick', email: 'pmiller1208@gmail.com'};
+// function getName(patrick) {
+//   return `Hello, my name is ${patrick.name}`
+// }
+// console.log(getName(patrick));
 
 
 
@@ -157,9 +157,16 @@ console.log(getName());
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-function appleIndex(/* code here */) {
-  /* code here */
-}
+let fruit = [ 'orange', 'grape', 'apple', 'banana', 'mango' ]
+function appleIndex() {
+  for( let i = 0; i <= fruit.length - 1; i++){
+    if(fruit[i] === 'apple'){
+      return i;
+    }
+  }
+} 
+
+console.log(appleIndex())
 
 /**
  * ### Challenge `isItAnApple`
@@ -176,8 +183,10 @@ function appleIndex(/* code here */) {
  * passing in [ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ] as the argument,
  * the returned value should be: [ false, true, false, false, true, false ].
 */
-function isItAnApple(/* code here */) {
-  /* code here */
+function isItAnApple() {
+  for( let i = 0; i <= fruit.length - 1; i++){
+    if
+  }
 }
 
 
@@ -236,8 +245,11 @@ console.log(get3rdCar(inventory));
  * it will return `This is a Lincoln Navigator`.
 */
 function getCarInfoByIndex(inventory, index) {
-  /* code here */
+  const carInfo = inventory[index];
+  return `This is a ${carInfo.car_make} ${carInfo.car_model}`
 }
+
+console.log(getCarInfoByIndex(inventory, 0));
 
 /**
  * ### Challenge `getLastCarInfo`
