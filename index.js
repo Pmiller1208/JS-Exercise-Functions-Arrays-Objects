@@ -36,12 +36,12 @@ function addNumbers(num1, num2) {
  * the returned value should look like: 'Goodbye, Andy. Have a great day.'
  * 
 */
-function sayGoodbye(name) {
-  return ('Goodbye, ' + name + '. Have a great day')
-}
+// function sayGoodbye(name) {
+//   return ('Goodbye, ' + name + '. Have a great day')
+// }
  
-sayGoodbye('Patrick');
-console.log(sayGoodbye('Patrick'));
+// sayGoodbye('Patrick');
+// console.log(sayGoodbye('Patrick'));
 
 /**
  * ### Challenge `temperatureCtoF`
@@ -59,14 +59,14 @@ console.log(sayGoodbye('Patrick'));
 */
 // let temperatureF = (celcius * (9 / 5)) + 32;
 
-function temperatureCtoF(celcius) {
-  return Math.round((celcius * (9/5) + 32))
+// function temperatureCtoF(celcius) {
+//   return Math.round((celcius * (9/5) + 32))
 
   
-}
+// }
 
-temperatureCtoF();
-  console.log(temperatureCtoF(24));
+// temperatureCtoF();
+  // console.log(temperatureCtoF(24));
 
 
 
@@ -88,9 +88,15 @@ temperatureCtoF();
  * 
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
-function temperatureInF(/* code here */) {
-  /* code here */
-}
+// function temperatureInF(temperature, unit) {
+//   if(unit === "F"){
+//     console.log(temperature + "F");
+//   } else {
+//     console.log(temperatureCtoF(temperature) + "C");
+//   }
+// }
+// temperatureInF(90, "F");
+// console.log(temperatureInF(24, C))
 
 
 /**
@@ -109,9 +115,11 @@ function temperatureInF(/* code here */) {
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(/* code here */) {
-  /* code here */
-}
+// function makePersonObject(id, name, email) {
+//   return {id, name, email};
+// }
+
+// console.log(makePersonObject(5, 'Leia', 'leia@gmail.com'));
 
 /**
  * ### Challenge `getName`
@@ -126,9 +134,12 @@ function makePersonObject(/* code here */) {
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
-function getName(/* code here */) {
-  /* code here */
+let patrick =  {id: 1, name: 'Patrick', email: 'pmiller1208@gmail.com'};
+function getName(name) {
+  return `Hello, my name is ${patrick.name}`
 }
+console.log(getName());
+
 
 
 /**
@@ -204,6 +215,8 @@ function get3rdCar(inventory) {
   const the3rd = inventory[2];
   return `The is a ${the3rd.car_make} ${the3rd.car_model}`
 }
+
+console.log(get3rdCar(inventory));
 
 // 👇 COMPLETE YOUR WORK BELOW 👇
 // 👇 COMPLETE YOUR WORK BELOW 👇
