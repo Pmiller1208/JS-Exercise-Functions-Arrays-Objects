@@ -183,12 +183,26 @@ console.log(appleIndex())
  * passing in [ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ] as the argument,
  * the returned value should be: [ false, true, false, false, true, false ].
 */
-function isItAnApple() {
-  for( let i = 0; i <= fruit.length - 1; i++){
-    if
+
+function isItAnApple(arr) {
+  const fruit = [];
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i] === 'apple'){
+      fruit.push(true);
+    } else{
+      fruit.push(false);
+    }
   }
+  return fruit;
 }
 
+console.log(isItAnApple([ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ]))
+
+// I can pass an array as an argument
+// console.log(isItAnApple([ 'orange', 'grape', 'apple', 'banana', 'mango' ]));
+//expected output => [ false, true, false, false, true, false ]
+//utulize .push()
+//
 
 
 
@@ -279,7 +293,7 @@ function getModelYears(/* code here */) {
   /* code here */
 }
 
-/**
+/*********************************************************************************************
  * ### Challenge `getCarInfoById`
  *  * * THIS ONE IS A STRETCH GOAL. ATTEMPT IT ONLY AFTER
  * COMPLETING ALL NON-STRETCH CHALLENGES IN THE REPOSITORY!
